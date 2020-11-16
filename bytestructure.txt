@@ -1,4 +1,4 @@
 {amount of keys}
-{char}{len of key}{keybyte1}{keybyte2}
+{char}{len of key}{an amount of bytes that fits the key}
 {len of last byte}
 {code}
