@@ -1,6 +1,5 @@
 from tkinter import filedialog, ttk
 import tkinter as tk
-import os
 
 class Node:
     def __init__(self, character, frequency):
@@ -177,11 +176,6 @@ def huffman_decode(file_path):
     with open(file_name, "w") as f:
         f.write(text)
         f.close()
-    file_path = file_path.split("/")[:-1]
-    file_path.append(file_name)
-    file_path = "\\".join(file_path)
-    open_file_button = tk.Button(decode_frame, text="Open decoded file!", command=lambda: os.system(file_path))
-    open_file_button.pack()
 
 def get_filepath(encode=True):
     if encode:
